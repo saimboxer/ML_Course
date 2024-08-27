@@ -1,48 +1,39 @@
-# Text Summarization with PEGASUS Model: Generative AI and Abstractive Summarization
+# Linear Regression with Gradient Descent
 
 ## Overview
-This project leverages the PEGASUS model to perform abstractive text summarization on the SAMSum dataset. The goal is to preprocess, fine-tune, and evaluate the model to generate high-quality summaries of dialogues. The project emphasizes generative AI techniques for creating concise and coherent summaries.
 
-## Data Collection
+This week 1 provides a practical implementation of linear regression using gradient descent. The project focuses on fitting a linear model to predict housing prices based on house size, optimizing model parameters, and visualizing the learning process.
 
-### SAMSum Dataset
-- **Dataset Source:** SAMSum dataset, which consists of dialogues and their corresponding summaries.
-- **Purpose:** Utilized for training and evaluating the summarization model.
+## What I Learn
 
-## Data Preprocessing
+1. **Linear Regression Basics:**
+   - Understand how linear regression models the relationship between features (e.g., house size) and targets (e.g., house price).
 
-### Cleaning and Tokenization
-- **Text Cleaning:** Removed extraneous elements such as special characters and non-textual data.
-- **Tokenization:** Converted text into tokens using the PEGASUS tokenizer.
+2. **Cost Function:**
+   - Learn to compute the cost function to measure the model's performance and how well it fits the training data.
 
-### Token Length Analysis
-- Analyzed token lengths for both dialogues and summaries to understand dataset characteristics and ensure proper model input handling.
+3. **Gradient Descent:**
+   - Implement gradient descent to iteratively adjust model parameters \( w \) (weight) and \( b \) (bias) to minimize the cost function.
 
-## Model Training
+4. **Parameter Optimization:**
+   - Use gradients to update parameters and track the convergence of the model through cost versus iteration plots.
 
-### PEGASUS Model
-- **Model Choice:** Implemented the PEGASUS model from Hugging Face's Transformers library.
-- **Training:** Fine-tuned the model on the SAMSum dataset using GPU acceleration to optimize performance.
+5. **Prediction:**
+   - Make predictions for new data points using the trained model.
 
-### Evaluation
-- **Metrics:** Evaluated model performance using ROUGE metrics to assess the quality of generated summaries.
-- **Optimization:** Tuned training parameters and utilized GPU resources for efficient model training.
+## Features
 
-## Skills Acquired
-- **Transformers Library:** Proficient use of Hugging Face’s Transformers for NLP tasks.
-- **Generative AI:** Advanced understanding of generative AI techniques for text summarization.
-- **GPU Resource Management:** Experience in managing GPU resources to accelerate model training.
+- **Cost Function Calculation:** Computes the cost of the model's predictions compared to actual values.
+- **Gradient Computation:** Calculates gradients to guide parameter updates.
+- **Gradient Descent Algorithm:** Optimizes parameters through iterative updates.
+- **Visualization:** Plots cost over iterations, parameter paths, and model predictions.
 
-## Dependencies
-- `transformers`
-- `datasets`
-- `torch`
-- `numpy`
-- `matplotlib`
-- `tqdm`
+## Getting Started
 
-## Learning Outcomes
-Working on this project provided insights into:
-- **Preprocessing Text Data:** Effective techniques for text cleaning and tokenization.
-- **Model Fine-Tuning:** Practical experience in fine-tuning state-of-the-art NLP models.
-- **Evaluation Metrics:** Applying and interpreting ROUGE metrics for summarization quality.
+1. Clone the repository and navigate to the project directory.
+2. Install required dependencies.
+3. Run the provided scripts to see the implementation in action, from fitting the model to making predictions.
+
+## Conclusion
+
+This project demonstrates the core concepts of linear regression and gradient descent, offering hands-on experience with model fitting, optimization, and evaluation. It provides a foundation for understanding more complex machine learning techniques.
