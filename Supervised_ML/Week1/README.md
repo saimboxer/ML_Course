@@ -9,7 +9,7 @@ This week 1 provides a practical implementation of linear regression using gradi
 1. **Linear Regression Basics:**
    - Understand how linear regression models the relationship between features (e.g., house size) and targets (e.g., house price).
 
-2. **Cost Function:**
+2. **Cost Function/ Loss Function:**
    - Learn to compute the cost function to measure the model's performance and how well it fits the training data.
 
 3. **Gradient Descent:**
